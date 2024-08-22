@@ -12,7 +12,7 @@
         <div class="container">
             <div class="forms-container">
                 <div class="signin-signup">
-                    <form action="" class="signup-form" method="post">
+                    <form action="signupParentAction.php" class="signup-form" method="post">
                         <h2 class="title">ĐĂNG KÝ PHỤ HUYNH</h2>
                         <div class="input-field">
                             <input type="text" name="hefullname" placeholder="Họ và tên"required>
@@ -27,8 +27,23 @@
                             <input type="password" name="hepassword" placeholder="Mật khẩu"required>
                         </div>
                         <div class="input-field">
-                            <input type="password" name="cfhepassword" placeholder="Xác nhận mật khẩu"required>
+                            <input type="password" name="confirm_hepassword" placeholder="Xác nhận mật khẩu"required>
                         </div>
+                        <script>
+                            var password = document.getElementById("hepassword");
+                            var confirm_password = document.getElementById("confirm_hepassword");
+    
+                            function validatePassword() {
+                                if (password.value !== confirm_password.value) {
+                                    confirm_password.setCustomValidity("Mật khẩu không khớp");
+                                } else {
+                                    confirm_password.setCustomValidity('');
+                                }
+                            }
+    
+                            password.onchange = validatePassword;
+                            confirm_password.onkeyup = validatePassword;
+                        </script>
                         <input type="submit" id="submit" value="Đăng ký">
                         <div class="hrline">
                             HOẶC
