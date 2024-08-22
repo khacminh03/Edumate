@@ -12,51 +12,54 @@
         <div class="container">
             <div class="forms-container">
                 <div class="signin-signup">
-                    <form action="" class="signup-form" method="post">
+                    <!-- Thêm thuộc tính enctype để cho phép upload file -->
+                    <form action="signupTutorCfAction.php" class="signup-form" method="post" enctype="multipart/form-data">
                         <h2 class="title">ĐĂNG KÝ THÔNG TIN GIA SƯ</h2>
                         <div class="input-field">
                             <label for="dob">Ngày tháng năm sinh</label>
                             <input type="date" name="dob">
                         </div>
                         <div class="input-field">
-                            <input type="text" name="address" placeholder="Địa chỉ hiện tại"required>
+                            <input type="text" name="address" placeholder="Địa chỉ hiện tại" required>
                         </div>
                         <div class="input-field">
-                            <input type="text" name="userpersonid" placeholder="Số CMND/CCCD"required>
+                            <input type="text" name="userpersonidnumber" placeholder="Số CMND/CCCD" required>
                         </div>
                         <div class="input-field">
-                            <input type="text" name="subject" placeholder="Môn dạy"required>
+                            <input type="text" name="subject" placeholder="Môn dạy" required>
                         </div>
                         <div class="input-field">
-                            <input type="text" name="class" placeholder="Lớp dạy"required>
+                            <input type="text" name="classCanTeach" placeholder="Lớp dạy" required>
                         </div>
                         <div class="input-field">
-                            <input type="text" name="area" placeholder="Khu vực dạy"required>
+                            <input type="text" name="area" placeholder="Khu vực dạy" required>
                         </div>
                         <div class="input-field">
-                            <input type="text" name="time" placeholder="Thời gian dạy trong ngày"required>
+                            <input type="text" name="time" placeholder="Thời gian dạy trong ngày" required>
                         </div>
                         <div class="input-field">
-                            <input type="text" name="day" placeholder="Ngày dạy trong tuần"required>
+                            <input type="text" name="day" placeholder="Ngày dạy trong tuần" required>
                         </div>
                         <div class="input-field">
                             <input type="text" placeholder="Ảnh thẻ">
                         </div>
-                        <input type="file" id="userpersonidimage" name="userpersonidimage">
+                        <!-- Chỉnh lại thuộc tính name để phù hợp với backend -->
+                        <input type="file" id="userpersonimage" name="userpersonimage" required>
                         <div class="input-field">
                             <input type="text" placeholder="Ảnh CMND/CCCD">
                         </div>
-                        <input type="file" id="usercertificate" name="usercertificate">
+                        <!-- Chỉnh lại thuộc tính name để phù hợp với backend -->
+                        <input type="file" id="userpersonidimage" name="userpersonidimage" required>
                         <div class="input-field">
                             <input type="text" placeholder="Ảnh bằng cấp">
                         </div>
-                        <input type="file" id="userimage" name="userimage">
+                        <!-- Chỉnh lại thuộc tính name để phù hợp với backend -->
+                        <input type="file" id="usercertificate" name="usercertificate" required>
                         <input type="submit" id="submit" value="Đăng ký">
                         <div class="hrline">
                             HOẶC
                         </div>
                         <div>
-
                         </div>
                         <div>
                             Bạn đã có tài khoản?
