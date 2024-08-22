@@ -11,9 +11,9 @@
             $row = $result->fetch_assoc();
             if (password_verify($password, $row["password"])) {
 
-                if ($row["accountid"] === "he") {
+                if (str_starts_with($row["accountId"], "HE")) {
                     header("Location: studentHome.html");
-                } else if ($row["accountid"] === "te") {
+                } else if (str_starts_with($row["accountId"], "TE")) {
                     header("Location: tutorHome.html");
                 } else {
                     header("Location: adminHome.html");
