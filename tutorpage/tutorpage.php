@@ -292,7 +292,7 @@ echo '</div>';
 ?>
 
 <hr class="custom-hr">
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="footer-container">
         <div class="footer-column">
             <h3>Liên hệ</h3>
