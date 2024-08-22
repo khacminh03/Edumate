@@ -3,7 +3,7 @@
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $username = $_POST["username"];
         $password = $_POST["password"];
-        $sql = $conn->prepare("SELECT * FROM account WHERE username = ?");
+        $sql = $conn->prepare("SELECT * FROM account WHERE email = ?");
         $sql->bind_param("s", $username);
         $sql->execute();
         $result = $sql->get_result();
