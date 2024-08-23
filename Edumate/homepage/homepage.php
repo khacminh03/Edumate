@@ -69,6 +69,7 @@
         cursor: pointer; 
         font-size: 20px; 
         margin-top: 20px; 
+        margin-right: 20px; 
     }
 
     .tutor_register_button {
