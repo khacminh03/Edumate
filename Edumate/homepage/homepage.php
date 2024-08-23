@@ -59,7 +59,7 @@
     <a href="#">Trang chủ</a>
     <a href="#">Gia sư</a>
     <a href="#">Học sinh</a>
-    <a href="#footer">Liên hệ</a>
+    <a href=#footer>Liên hệ</a>
     <div class="navbar-right">
       <button class="login_button" onclick="window.location.href='login.html';">
         Đăng nhập
