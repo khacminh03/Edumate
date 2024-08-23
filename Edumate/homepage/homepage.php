@@ -65,6 +65,7 @@
         Đăng nhập
       </button>
       <button class="register_button" href="#">Đăng ký</button>
+      <button class="register_button" href="#">Đăng ký Gia Sư</button>
     </div>
   </div>
 
