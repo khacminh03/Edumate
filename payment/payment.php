@@ -38,7 +38,7 @@
         <div class="pdf-section">
             <h3>Hợp Đồng</h3>
             <!-- Đường dẫn đến file PDF -->
-            <a href="hopdong.pdf" target="_blank">Tải về Hợp Đồng</a>
+            <a href="../payment/contract.pdf" target="_blank">Tải về Hợp Đồng</a>
         </div>
 
         <button class="btn">Thanh Toán</button>
