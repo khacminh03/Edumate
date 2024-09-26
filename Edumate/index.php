@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-  <link rel="stylesheet" href="/homepage/CSS/homepage.css" />
+  <link rel="stylesheet" href="./homepage/CSS/homepage.css" />
   <title>Trang chủ</title>
   <style>
     body {
@@ -89,17 +89,17 @@
 <body>
   <div class="navbar">
     <a href="#">
-      <img src="../homepage/image/logo.jpg" alt="Logo" />
+      <img src="./homepage/image/logo.jpg" alt="Logo" />
     </a>
-    <a href="../homepage/homepage.php">Trang chủ</a>
-    <a href="../tutorpage/tutorpageUnsign.php">Gia sư</a>
+    <a href="index.php">Trang chủ</a>
+    <a href="./tutorpage/tutorpageUnsign.php">Gia sư</a>
     <a href="#footer">Liên hệ</a>
     <div class="navbar-right">
-      <button class="login_button" id="login_button" onclick="window.location.href='../login/signin.html';">
+      <button class="login_button" id="login_button" onclick="window.location.href='./login/signin.html';">
         Đăng nhập
       </button>
-      <button class="register_button" onclick="window.location.href='../signup/signuphe.html';">Đăng ký</button>
-      <button class="tutor_register_button" onclick="window.location.href='../signup/signupte.html';">Đăng ký Gia Sư</button>
+      <button class="register_button" onclick="window.location.href='./signup/signuphe.html';">Đăng ký</button>
+      <button class="tutor_register_button" onclick="window.location.href='./signup/signupte.html';">Đăng ký Gia Sư</button>
     </div>
   </div>
 
@@ -116,7 +116,7 @@
       </div>
       <br />
       <div>
-        <button onclick="window.location.href='../signup/signuphe.html';">
+        <button onclick="window.location.href='./signup/signuphe.html';">
           Đăng ký chọn gia sư ngay
         </button>
       </div>
@@ -142,7 +142,7 @@
       </div>
       <br />
       <div>
-        <button style="background-color: #2e7ef5" onclick="window.location.href='../signup/signuphe.html';">
+        <button style="background-color: #2e7ef5" onclick="window.location.href='./signup/signuphe.html';">
           Đăng ký chọn gia sư ngay
         </button>
       </div>
@@ -182,7 +182,7 @@
     </div>
   </div>
   <div class="button_register" style="margin-bottom: 30px">
-    <button onclick="window.location.href='../signup/signuphe.html';">
+    <button onclick="window.location.href='./signup/signuphe.html';">
       Đăng ký chọn gia sư ngay
     </button>
   </div>
@@ -238,7 +238,7 @@
         margin-bottom: 30px;
         padding-bottom: 20px;
       ">
-    <button style="background-color: #2e7ef5" onclick="window.location.href='../signup/signuphe.html';">
+    <button style="background-color: #2e7ef5" onclick="window.location.href='./signup/signuphe.html';">
       Đăng ký chọn gia sư ngay
     </button>
   </div>
@@ -276,7 +276,7 @@
       </div>
     </div>
   </div>
-  <?php include '../footer/footer.html'; ?>
+  <?php include './footer/footer.html'; ?>
 </body>
 
 </html>

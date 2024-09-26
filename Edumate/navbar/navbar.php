@@ -74,7 +74,7 @@
             }
             echo '<a href="' . $hre . '">Tài khoản <i class="fa fa-user-circle-o" aria-hidden="true" style="color: #1e90ff"></i></a>';
         } else {
-            echo '<a href="../login/signin.php">Đăng nhập <i class="fa fa-user-circle-o" aria-hidden="true" style="color: #1e90ff"></i></a>';
+            echo '<a href="../login/signin.html">Đăng nhập <i class="fa fa-user-circle-o" aria-hidden="true" style="color: #1e90ff"></i></a>';
         }
     ?>
       </div>

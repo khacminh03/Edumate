@@ -93,7 +93,6 @@ for ($i = $start; $i < $end; $i++) {
     echo '<p><strong>Địa chỉ:</strong> ' . $tutors[$i]['address'] . '</p>';
     echo '<p><strong>Giờ dạy:</strong> ' . $tutors[$i]['time'] . '</p>';
     echo '</div></div>';
-    echo '<button class="hire-button">Thuê ngay</button>';
     echo '</div>';
 }
 echo '</div>';
