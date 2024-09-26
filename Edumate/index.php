@@ -6,16 +6,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-  <link rel="stylesheet" href="../homepage/CSS/homepageSigned.css" />
+  <link rel="stylesheet" href="/homepage/CSS/homepage.css" />
   <title>Trang chủ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+      overflow: hidden;
+    }
+
+    .navbar a,
+    .navbar img {
+      float: left;
+      display: block;
+      text-align: center;
+      line-height: 70px;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: larger;
+    }
+
+    .navbar img {
+      height: 70px;
+      width: auto;
+      padding: 5px 10px;
+    }
+
+    .navbar a {
+      color: #070707;
+      height: 70px;
+      width: auto;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .navbar-right {
+      float: right;
+    }
+
+    .navbar-right login_button {
+    background-color: #cc5917; 
+    color: white; 
+    border: none; 
+    padding: 20px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 20px; 
+    margin-top: 20px; 
+    }
+
+    .register_button {
+        background-color: #2e7ef5; 
+        color: white; 
+        border: none; 
+        padding: 20px 20px; 
+        border-radius: 5px; 
+        cursor: pointer; 
+        font-size: 20px; 
+        margin-top: 20px; 
+    }
+
+    .tutor_register_button {
+        background-color: #2e7ef5; 
+        color: white; 
+        border: none; 
+        padding: 20px 20px; 
+        border-radius: 5px; 
+        cursor: pointer; 
+        font-size: 20px; 
+        margin-top: 20px; 
+        margin-right: 20px; 
+    }
+
+  </style>
 </head>
 
 <body>
-  <?php include '../navbar/navbar.php'; ?>
+  <div class="navbar">
+    <a href="#">
+      <img src="../homepage/image/logo.jpg" alt="Logo" />
+    </a>
+    <a href="../homepage/homepage.php">Trang chủ</a>
+    <a href="../tutorpage/tutorpageUnsign.php">Gia sư</a>
+    <a href="#footer">Liên hệ</a>
+    <div class="navbar-right">
+      <button class="login_button" id="login_button" onclick="window.location.href='../login/signin.html';">
+        Đăng nhập
+      </button>
+      <button class="register_button" onclick="window.location.href='../signup/signuphe.html';">Đăng ký</button>
+      <button class="tutor_register_button" onclick="window.location.href='../signup/signupte.html';">Đăng ký Gia Sư</button>
+    </div>
+  </div>
+
   <div class="container_1">
     <div class="text-box_1">
       <div>
-        <a style="font-weight: 600; font-size: 180%">Chào mừng bạn đến với EDUMATE</a>
+        <a style="font-weight: 600; font-size: 180%">Chào mừng bạn đến với
+          EDUMATE</a>
       </div>
       <br />
       <div>
@@ -24,7 +116,7 @@
       </div>
       <br />
       <div>
-        <button onclick="window.location.href='../tutorpage/tutorpage.php';">
+        <button onclick="window.location.href='../signup/signuphe.html';">
           Đăng ký chọn gia sư ngay
         </button>
       </div>
@@ -38,7 +130,8 @@
       </div>
       <br />
       <div>
-        <a style="font-weight: 600; font-size: 100%">Trải nghiệm dịch vụ chất lượng và chuyên nghiệp!</a>
+        <a style="font-weight: 600; font-size: 100%">Trải nghiệm dịch vụ chất
+          lượng và chuyên nghiệp!</a>
       </div>
       <br />
       <div>
@@ -49,7 +142,7 @@
       </div>
       <br />
       <div>
-        <button style="background-color: #2e7ef5" onclick="window.location.href='../tutorpage/tutorpage.php';">
+        <button style="background-color: #2e7ef5" onclick="window.location.href='../signup/signuphe.html';">
           Đăng ký chọn gia sư ngay
         </button>
       </div>
@@ -89,7 +182,7 @@
     </div>
   </div>
   <div class="button_register" style="margin-bottom: 30px">
-    <button onclick="window.location.href='../tutorpage/tutorpage.php';">
+    <button onclick="window.location.href='../signup/signuphe.html';">
       Đăng ký chọn gia sư ngay
     </button>
   </div>
@@ -145,7 +238,7 @@
         margin-bottom: 30px;
         padding-bottom: 20px;
       ">
-    <button style="background-color: #2e7ef5" onclick="window.location.href='../tutorpage/tutorpage.php';">
+    <button style="background-color: #2e7ef5" onclick="window.location.href='../signup/signuphe.html';">
       Đăng ký chọn gia sư ngay
     </button>
   </div>
