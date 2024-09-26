@@ -3,7 +3,7 @@
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $username = $_POST["username"];
         $password = $_POST["password"];
-        $sql = $conn->prepare("SELECT * FROM account WHERE email = ?");
+        $sql = $conn->prepare("SELECT * FROM account WHERE username = ?");
         $sql->bind_param("s", $username);
         $sql->execute();
         $result = $sql->get_result();
@@ -12,11 +12,11 @@
             if (password_verify($password, $row["password"])) {
 
                 if (str_starts_with($row["accountId"], "HE")) {
-                    header("Location: studentHome.html");
+                    header("Location: homepageSigned.html");
                 } else if (str_starts_with($row["accountId"], "TE")) {
-                    header("Location: tutorHome.html");
+                    header("Location: homepageSigned.html");
                 } else {
-                    header("Location: adminHome.html");
+                    header("Location: homepageSigned.html");
                 }
             } else {
                 echo "<script>alert('Wrong password or username')</script>";
