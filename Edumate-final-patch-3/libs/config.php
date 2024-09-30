@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Database configuration
 $servername = "127.0.0.1"; // XAMPP usually uses 127.0.0.1 instead of localhost to avoid DNS resolution issues
 $username = "root";        // Default XAMPP MySQL username is "root"

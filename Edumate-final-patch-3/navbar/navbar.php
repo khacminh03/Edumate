@@ -64,7 +64,6 @@
       <div class="navbar-right">
         <?php
         session_start();
-
         if (isset($_SESSION["userId"])) {
             $hre = "";
             if (str_starts_with($_SESSION["userId"], "HE")) {
