@@ -160,3 +160,14 @@ button {
     padding: 10px;
     background-color: white;
 }
+
+.container_2 {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    padding: 20px;
+  }
+  
+  .text-box_2 {
+    max-width: 50%; 
+  }
