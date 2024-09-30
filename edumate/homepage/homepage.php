@@ -9,6 +9,17 @@
   <link rel="stylesheet" href="../homepage/CSS/homepage.css" />
   <title>Trang chủ</title>
   <style>
+    .container_2 {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .text-box_2 {
+      max-width: 50%;
+    }
+    
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -103,7 +114,7 @@
     </div>
   </div>
 
-  <div class="container_1">
+ <div class="container_1">
     <div class="text-box_1">
       <div>
         <a style="font-weight: 600; font-size: 180%">Chào mừng bạn đến với
@@ -130,21 +141,15 @@
       </div>
       <br />
       <div>
-        <a style="font-weight: 600; font-size: 100%">Trải nghiệm dịch vụ chất
-          lượng và chuyên nghiệp!</a>
+        <a style="font-weight: 600; font-size: 100%">Trải nghiệm dịch vụ chất lượng và chuyên nghiệp!</a>
       </div>
       <br />
       <div>
-        <a>Thật tốn thời gian khi gặp phải gia sư không phù hợp. GrowGreen
-          luôn làm việc chuyên nghiệp và trách nhiệm, bắt đầu từ việc tuyển
-          chọn đến đào tạo gia sư. Đảm bảo gia sư luôn đạt tiêu chuẩn về kiến
-          thức và kỹ năng giảng dạy.</a>
+        <a>Thật tốn thời gian khi gặp phải gia sư không phù hợp. GrowGreen luôn làm việc chuyên nghiệp và trách nhiệm, bắt đầu từ việc tuyển chọn đến đào tạo gia sư. Đảm bảo gia sư luôn đạt tiêu chuẩn về kiến thức và kỹ năng giảng dạy.</a>
       </div>
       <br />
       <div>
-        <button style="background-color: #2e7ef5" onclick="window.location.href='login.html';">
-          Đăng ký chọn gia sư ngay
-        </button>
+        <button style="background-color: #2e7ef5" onclick="window.location.href='../signup/signuphe.html';">Đăng ký chọn gia sư ngay</button>
       </div>
     </div>
   </div>
