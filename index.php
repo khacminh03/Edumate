@@ -9,6 +9,16 @@
   <link rel="stylesheet" href="./homepage/CSS/homepage.css" />
   <title>Trang chủ</title>
   <style>
+    .container_2 {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .text-box_2 {
+      max-width: 50%;
+    }
     body {
       font-family: Arial, sans-serif;
       margin: 0;
