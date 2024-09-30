@@ -149,7 +149,7 @@
       </div>
       <br />
       <div>
-        <button style="background-color: #2e7ef5" onclick="window.location.href='../signup/signuphe.html';">Đăng ký chọn gia sư ngay</button>
+        <button style="background-color: #2e7ef5" onclick="window.location.href='../signup/signuphe.php';">Đăng ký chọn gia sư ngay</button>
       </div>
     </div>
   </div>
